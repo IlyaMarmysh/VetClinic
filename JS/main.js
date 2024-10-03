@@ -1,7 +1,5 @@
 const slider = [
-    {span: "Айболит\n" +
-            "круглосуточная \n" +
-            "ветклиника", image: 1},
+    {span: "Айболит\nкруглосуточная \nветклиника", image: 1},
     {span: "Комфортные\n" +
             "оборудованные\n" +
             "стационары", image: 2},
@@ -26,9 +24,13 @@ if (container) {
         const sliderDiv = document.createElement('div');
         sliderDiv.className = 'swiper-slide';
         const pTag = document.createElement('p');
-        pTag.textContent = `${person.span}`;
+        const textWithNewLines = person.span;
+        const formattedText = textWithNewLines.replace(/\n/g, '<br>');
+        pTag.innerHTML = formattedText;
         sliderDiv.appendChild(pTag);
         const buttonTag = document.createElement('button');
+        buttonTag.id = 'active-button'
+        buttonTag.onclick = () => activeButton();
         buttonTag.textContent = `ЗАПИСАТЬСЯ`;
         buttonTag.className = 'header__content__button';
         sliderDiv.appendChild(buttonTag);
@@ -64,6 +66,10 @@ function showSlide(index) {
 }
 function goToSlide(index) {
     showSlide(index);
+}
+function activeButton() {
+    const activeButton = document.getElementById('active-button');
+    activeButton.classList.add('active');
 }
 function updatePagination() {
     const dots = document.querySelectorAll('.pagination__ul__li');
