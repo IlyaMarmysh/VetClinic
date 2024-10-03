@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Reg'), local('Futura-New-Bold-Reg'),
+    url('../Font/FuturaNewBold-Reg.woff2') format('woff2'),
+    url('../Font/FuturaNewBold-Reg.woff') format('woff'),
+    url('../Font/FuturaNewBold-Reg.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SchoolBook';
+    src: local('SchoolBook'), local('SchoolBook'),
+    url('../Font/schoolbookcyrillic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.wrapper {
+    background-color: #FFFEFE;
+    max-width: 1760px;
+    margin: auto;
+}
+.header{
+    margin-top: 4rem;
+    width: 1760px;
+}
+.header__navigation, .header__navigation__list ul, .header__navigation__sity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navigation__logo{
+    width: 100px;
+    height: 100px;
+}
+.header__navigation__logo img{
+    width: 80%;
+    margin: 1rem 1rem;
+}
+.header__navigation__list, .header__navigation__sity p, .header__content__button, .pagination__ul__li{
+    font-family: 'Futura New';
+    font-size: 1.25rem;
+}
+.header__navigation__list ul li, .pagination__ul__li{
+    list-style: none;
+    margin-right: 5rem;
+}
+.header__navigation__list ul li:last-child{
+    margin-right: 0;
+}
+.header__navigation__list ul li a, .pagination__ul__li{
+    text-decoration: none;
+    color: #C3B9B5;
+}
+.header__navigation__sity p{
+    color: #FFC59E;
+}
+.header__content__button{
+    width: 17rem;
+    height: 4.2rem;
+    border: none;
+    border-radius: 2.09375rem;
+    background-color: #FFC59E;
+    color: #fff;
+    box-shadow: 0px 4px 20px 0px #FFC59E;
+}
+
+.swiper-container {
+    max-width: 1760px;
+    margin-top: 8rem;
+    height: 786px;
+    position: relative;
+}
+.swiper-slide p{
+    width: 330px;
+}
+
+.swiper-slide {
+    display: flex;
+    position: absolute;
+    width: 1562px;
+    height: 100%;
+    margin-left: 16rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'SchoolBook';
+    font-size: 5rem;
+    color: #080606;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url('../Image/slider/1.png');
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.swiper-slide.active {
+    opacity: 1;
+}
+.pagination {
+    width: 2.5rem;
+    height: 100%;
+
+    position: absolute;
+}
+.pagination ul{
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pagination__ul__li{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.pagination__ul__li.active{
+    border: 2px solid #080606;
+    color: #080606;
+}
