@@ -1,0 +1,70 @@
+
+
+
+
+
+                    <div class="swiper-slide">
+                        <p>
+                            Собственная
+                            современная
+                            лаборатория
+                        </p>
+                        <button class="header__content__button">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                        <img src="Image/image.png" alt="" class="header__image">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p>
+                            Аптека и зоомагазин
+                            по доступным
+                            ценам
+                        </p>
+                        <button class="header__content__button">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                        <img src="Image/image.png" alt="" class="header__image">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p>
+                            Груминг салон
+                            и косметические
+                            товары
+                        </p>
+                        <button class="header__content__button">
+                            ЗАПИСАТЬСЯ
+                        </button>
+                        <img src="Image/image.png" alt="" class="header__image">
+                    </div>
+
+<script src="JS/main.js"></script>
+
+<div class="swiper-slide">
+                <p>
+                    Новейшее
+                    европейское
+                    оборудование
+                </p>
+                <button class="header__content__button">
+                    ЗАПИСАТЬСЯ
+                </button>
+            </div>
+
+
+
+                <div class="swiper-slide">Slide 1</div>
+
+
+                                        <swiper-slide>
+                                            <p>
+                                                Комфортные
+                                                оборудованные
+                                                стационары
+                                            </p>
+                                            <button class="header__content__button">
+                                                ЗАПИСАТЬСЯ
+                                            </button>
+                                            <img src="Image/slider/1.png" alt="" class="header__image">
+                                        </swiper-slide>>
