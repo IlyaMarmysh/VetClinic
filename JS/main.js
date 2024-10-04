@@ -1,21 +1,4 @@
-const slider = [
-    {span: "Айболит\nкруглосуточная \nветклиника", image: 1},
-    {span: "Комфортные\n" +
-            "оборудованные\n" +
-            "стационары", image: 2},
-    {span: "Новейшее\n" +
-            "европейское\n" +
-            "оборудование", image: 3},
-    {span: "Собственная\n" +
-            "современная\n" +
-            "лаборатория", image: 4},
-    {span: "Аптека и зоомагазин\n" +
-            "по доступным\n" +
-            "ценам", image: 5},
-    {span: "Груминг салон\n" +
-            "и косметические\n" +
-            "товары", image: 6},
-];
+
 const container = document.getElementById('swiper-container');
 const pagination = document.getElementById('Pagination');
 if (container) {
@@ -91,3 +74,24 @@ function prevSlide() {
 showSlide(currentSlide);
 
 setInterval(nextSlide, 5000);
+
+
+const cardWrapper = document.getElementById('card-wrapper');
+if (cardWrapper) {
+    cards.forEach(card => {
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card';
+        const cardSVG = `${card.image}`
+        cardDiv.innerHTML = cardSVG;
+        const cardPTag = document.createElement('p');
+        cardPTag.innerText = `${card.span}`;
+        cardDiv.appendChild(cardPTag);
+        const cardATag = document.createElement('a');
+        cardATag.innerText = `${card.h2}`;
+        cardDiv.appendChild(cardATag);
+        cardDiv.appendChild(cardPTag);
+        cardWrapper.appendChild(cardDiv);
+    });
+} else {
+    console.error('Контейнер не найден');
+};

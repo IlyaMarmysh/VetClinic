@@ -154,3 +154,43 @@
 .number{
     color: #59443F;
 }
+.card-wrapper{
+    max-width: 100%;
+    margin-left:204px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 0px #0000001A;
+    margin: 1.5rem auto;
+    color: #FFC59E;
+    position: relative;
+}
+.card svg{
+    height: 110px;
+    bottom: 24px;
+    right: 24px;
+    position: absolute;
+}
+.card p{
+    color: #59443F;
+    font-family: 'SchoolBook';
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 12.5px;
+    left: 25px;
+    line-height: 1.25rem;
+}
+.card a{
+    color: #59443F;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-family: 'SchoolBook';
+    font-size: 1.875rem;
+    text-decoration: none;
+}
