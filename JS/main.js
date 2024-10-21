@@ -1,4 +1,3 @@
-
 const container = document.getElementById('swiper-container');
 const pagination = document.getElementById('Pagination');
 if (container) {
@@ -95,3 +94,4 @@ if (cardWrapper) {
 } else {
     console.error('Контейнер не найден');
 };
+
